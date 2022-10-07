@@ -3,7 +3,7 @@ package personnages;
 public class Village {
 	private String nom;
 	private Chef chef;
-	private Gaulois[] villagois;
+	private  Gaulois[] villagois;
 	private int nombrevillagois;
 
 	public Village(String nom, int nombremaximum) {
@@ -18,7 +18,15 @@ public class Village {
 		return nom;
 	}
 
-	public void ajouterHabitant() {
+	public void ajouterGaulois(Gaulois gauloisajouter) {
+		if (nombremaximum > villagois.length {
+			villagois[nombrevillagois] = gauloisajouter; 
+		}
 
 	}
+	
+	public class TrouverHabibtant {
+		
+	}
 }
+
