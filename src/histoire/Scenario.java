@@ -1,4 +1,4 @@
-package personnages;
+package histoire;
 
 
 import personnages.Gaulois;
