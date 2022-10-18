@@ -1,32 +1,24 @@
 package personnages;
 
 public class Village {
-	private String nom;
-	private Chef chef;
-	private  Gaulois[] villagois;
-	private int nombrevillagois;
+    private Gaulois[] villageois;
+    private  int nbvillageois = 0;
+    private String nom;
+    private Chef chef;
 
-	public Village(String nom, int nombremaximum) {
-		this.nom = nom;
-	}
+    public Village(String nom,int nbvillageoisMaximum) {
+    this.nom = nom;
+    }
 
-	public void setChef(Chef chef) {
-		this.chef = chef;
-	}
+    public void setChef(Chef chef) {
+    this.chef = chef;
+    }
 
-	public String getNom() {
-		return nom;
-	}
+    public String getNom() {
+    return nom;
+    }
+    public static void main(String[] args) {
 
-	public void ajouterGaulois(Gaulois gauloisajouter) {
-		if (nombremaximum > villagois.length {
-			villagois[nombrevillagois] = gauloisajouter; 
-		}
-
-	}
-	
-	public class TrouverHabibtant {
-		
-	}
+    }
 }
 
