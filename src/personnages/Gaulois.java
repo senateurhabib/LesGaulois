@@ -37,9 +37,9 @@ public class Gaulois {
 
     public void boirePotion(int i) {
         effetPotion = i;
-        if(i==3) {
-            System.out.println(prendreParole() + "Merci Druide, je sens que ma force est 3 fois dupliquée.");
-        }
+        
+            System.out.println(prendreParole() + "Merci Druide, je sens que ma force est "+ i +" fois dupliquée.");
+        
 
     }
 

@@ -29,10 +29,13 @@ public class Village {
 
 	}
 
-	public void  trouverHabitant(int numvillage){
+	public  Gaulois trouverHabitant(int numvillage){
 		 Gaulois gaulois = villageois[numvillage];
+		 return gaulois;
+		 
 		
 		}
+	
 }
 
 	public static void main(String[] args) {
