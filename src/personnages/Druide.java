@@ -53,7 +53,7 @@ public class Druide {
             System.out.println(prendreParole()  + "Non Obelix !... Tu n'auras pas de potion magique !");
 
         } else {
-            gaul.setForce(forcePotion);
+            gaul.boirePotion(forcePotion);
         }
 
 
