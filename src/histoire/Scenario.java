@@ -1,24 +1,41 @@
 package histoire;
 
-
-import personnages.Gaulois;
-import personnages.Romain;
 import personnages.Druide;
+import personnages.Equipement;
+import personnages.Gaulois;
+import personnages.Musee;
+import personnages.Romain;
+//import village
 
 public class Scenario {
-	
 
-    public static void main(String[] args) {
-        Gaulois asterix = new Gaulois("Astérix", 8);
-        Romain minus = new Romain("Minus", 6);
-        Druide pano = new Druide("Panoramix", 5, 10);
+	public static void main(String[] args) {
+		Druide druide = new Druide("Panoramix", 5, 10);
+		druide.parler("Je vais aller préparer une petite potion...");
+		druide.preparerPotion();
+		Gaulois obelix = new Gaulois("Obélix", 25);
+		Gaulois asterix = new Gaulois("Astérix", 8);
+		druide.booster(obelix);
+		obelix.parler("Par Bélénos, ce n'est pas juste !");
+		druide.booster(asterix);
+		asterix.parler("Bonjour");
+		Romain minus = new Romain("Minus", 6);
+		Romain milexcus = new Romain("Milexcus", 8);
+		minus.sEquiper(Equipement.BOUCLIER);
+		minus.sEquiper(Equipement.CASQUE);
+		milexcus.sEquiper(Equipement.CASQUE);
+		minus.parler("UN GAU... UN GAUGAU...");
+		asterix.frapper(minus);
+		if (minus.getForce() > 0) {
+			asterix.frapper(milexcus);
+		}
 
-        asterix.parler("Bonjour à tous");
-        minus.parler("UN GAU... UN GAUGAU...");
-        asterix.frapper(minus);
-        asterix.frapper(minus);
-        asterix.frapper(minus);
-        
-    }
+//		Partie a decommenter
 
+		Musee musee = new Musee();
+		asterix.faireUneDonnation(musee);
+		// test
+		System.out.println(musee.extraireInstructionsCaml());
+
+	}
 }
